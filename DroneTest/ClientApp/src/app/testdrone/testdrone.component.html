@@ -1,0 +1,19 @@
+<h1>Test Drone</h1>
+<p>Please paste the text into text area and after that please, click on button "TEST DRONE". to get the value in output area</p>
+<div><h5>Input Area</h5> <button class="btn btn-primary" (click)="testDrone()">TEST DRONE</button> </div>
+<textarea id="textInput" [(ngModel)]="textInput"></textarea>
+<h5>Output Area</h5>
+
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="droneresult">
+  <thead>
+    <tr>
+      <th>Results : </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let drone of droneresult">
+      <td>{{ drone }}</td>
+    </tr>
+  </tbody>
+</table>

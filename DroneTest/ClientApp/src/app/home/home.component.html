@@ -1,0 +1,46 @@
+<h1>Hello!</h1>
+<h3>Welcome to Drone Coding Test</h3>
+
+<p>The application was builded with the following tools</p>
+<ul>
+  <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
+  <li><a href='https://angular.io/'>Angular</a> and <a href='http://www.typescriptlang.org/'>TypeScript</a> for client-side code</li>
+  <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
+</ul>
+<h3>This application is to accomplish the following statement</h3>
+<ul>
+  <li>
+    A squad of drones is tasked with delivering packages for a major online reseller in a world
+    where time and distance do not matter. Each drone can carry a specific weight and can make
+    multiple deliveries before returning to home base to pick up additional loads; however, the goal
+    is to make the fewest number of trips as each time the drone returns to home base, it is
+    extremely costly to refuel and reload the drone.
+  </li>
+  <li>
+    The purpose of the written software is to accept input which will include the name of each
+    drone and the maximum weight it can carry, along with a series of locations and the total weight
+    needed to be delivered to that specific location. The software should highlight the most efficient
+    deliveries for each drone to make on each trip.
+  </li>
+  <li>
+    Assume that time and distance to each drop off location do not matter, and that the size of
+    each package is also irrelevant. It is also assumed that the cost to refuel and restock each
+    drone is a constant and does not vary between drones. The maximum number of drones in a
+    squad is 100, and there is no maximum number of deliveries which are required.
+  </li>
+</ul>
+
+<h3>Main idea of resolution, these are the steps</h3>
+<ul>
+  <li> We always start with the heaviest drones, to reduce the number of trips </li>
+  <li> If none of the drone cannot take a pachage we have to remove that locations from the list, to prevent any infinite loop</li>
+  <li> We iterate until we don't have more locations to assign</li>
+  <li>Always we use ALL available drones, one at a time</li>
+  <li>If one of the package has same weigth of drone then we assign that to the drone</li>
+  <li>We iterate for locations trying to add maximun amount of locations into the drone</li>
+
+</ul>
+   
+
+
+
